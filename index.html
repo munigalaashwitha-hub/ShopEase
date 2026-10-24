@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ShopEase</h1>
+        <p>Your Style, Your Choice!</p>
+        <button onclick="welcomeCustomer()">Start Shopping</button>
+    </header>
+    <main>
+        
+<div class="cart-summary">
+    🛍️ Cart Items: <span id="cart-count">0</span>
+    <br>
+    Total: ₹<span id="cart-total">0</span>
+    <div id="cart-items"></div>
+</div>
+
+        <h2>Our Fashion Collection</h2>
+        <p>Discover your new favourite style</p>
+        
+<section class="add-product">
+    <h2>Add a New Product</h2>
+
+    <form id="product-form">
+        <input type="text" id="product-name"
+               placeholder="Product Name" required>
+
+        <input type="text" id="product-category"
+               placeholder="Category" required>
+
+        <input type="number" id="product-price"
+               placeholder="Price (₹)" min="0.01" step="0.01" required>
+
+        <input type="number" id="product-stock"
+               placeholder="Stock Quantity" min="0" step="1" required>
+
+        <button type="submit">Add Product</button>
+    </form>
+</section>
+
+
+
+
+        
+<section class="products" id="products-container">
+    <p>Loading products...</p>
+</section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
